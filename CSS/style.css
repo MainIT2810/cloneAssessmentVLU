@@ -1,0 +1,85 @@
+/* Reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+}
+
+#main {
+}
+
+#header {
+  background-color: #343a40;
+}
+
+#header .navbar__header {
+  height: 68px;
+}
+
+#header .navbar__header .logo {
+  width: 19%;
+}
+
+#header .navbar__header button {
+  float: right;
+  margin-top: 15px;
+  margin-right: 10px;
+}
+#carousel {
+  background-image: url(../img/Banner.jpg);
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+#carousel .carousel__content {
+  color: aliceblue;
+  text-align: center;
+  padding-top: 15px;
+}
+#carousel .carousel__content h1 {
+  padding: 0 10%;
+  font-size: 1.5rem;
+  letter-spacing: 10px;
+  font-weight: 700;
+  overflow: hidden;
+  border-right: 0.15em solid orange;
+  white-space: nowrap;
+  animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
+}
+#carousel .carousel__content span {
+  word-spacing: 1.5px;
+  font-size: 18px;
+  font-weight: 600;
+}
+/* The typing effect */
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: orange;
+  }
+}
+#carousel .carousel__button {
+    position: absolute;
+    top: 71%;
+    bottom: 0;
+    width: 100%;
+    height: 45px;
+    text-align: center;
+    padding-top: 15px;
+}
